@@ -1,5 +1,6 @@
-# Miscellaneous/temporary files
-misc/
+# Temporary/generated files
+*.pyc
+__pycache__/
 
 # OS files
 .DS_Store
