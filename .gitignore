@@ -1,0 +1,16 @@
+# Miscellaneous/temporary files
+misc/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
