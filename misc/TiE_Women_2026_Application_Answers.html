@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiE Women Program 2026 – Application Answers | Rebloom Collective</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #262626;
+            background: #f0f4f8;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5f8f 60%, #0d9488 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-header .subtitle {
+            font-size: 18px;
+            opacity: 0.85;
+            margin-bottom: 6px;
+        }
+
+        .page-header .meta {
+            font-size: 13px;
+            opacity: 0.65;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        /* Alert box */
+        .alert {
+            background: #fef3c7;
+            border-left: 5px solid #d97706;
+            border-radius: 0 8px 8px 0;
+            padding: 18px 22px;
+            margin-bottom: 32px;
+            font-size: 14px;
+            color: #78350f;
+        }
+
+        .alert strong { color: #92400e; }
+
+        /* Section card */
+        .section-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            margin-bottom: 32px;
+            overflow: hidden;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #1a365d, #2c5f8f);
+            color: white;
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .section-number {
+            width: 36px;
+            height: 36px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .section-header h2 {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+
+        .section-body { padding: 0; }
+
+        /* Q&A block */
+        .qa-block {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .qa-block:last-child { border-bottom: none; }
+
+        .question {
+            background: #f8fafc;
+            padding: 16px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #1a365d;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .question-label {
+            background: #2563eb;
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        .answer {
+            padding: 18px 28px;
+            color: #374151;
+            font-size: 14.5px;
+        }
+
+        .answer p { margin-bottom: 12px; }
+        .answer p:last-child { margin-bottom: 0; }
+
+        .answer ul {
+            margin: 10px 0 10px 20px;
+        }
+
+        .answer ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Highlight / note */
+        .note {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-size: 13px;
+            color: #1e40af;
+            margin-top: 12px;
+        }
+
+        .note::before {
+            content: "📌 Note: ";
+            font-weight: 700;
+        }
+
+        .placeholder {
+            background: #fef3c7;
+            border: 1px dashed #d97706;
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-size: 13px;
+            color: #92400e;
+            display: inline-block;
+            margin-top: 6px;
+        }
+
+        /* Sub-heading inside answer */
+        .answer-heading {
+            font-weight: 700;
+            color: #1a365d;
+            margin: 14px 0 6px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        /* Pill for selection options */
+        .pill {
+            display: inline-block;
+            background: #059669;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 12px;
+            border-radius: 20px;
+            margin-left: 8px;
+        }
+
+        /* Reminders section */
+        .reminders-card {
+            background: linear-gradient(135deg, #0d9488, #0f766e);
+            color: white;
+            border-radius: 12px;
+            padding: 30px 32px;
+            margin-top: 32px;
+        }
+
+        .reminders-card h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .reminder-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 14px;
+            font-size: 14px;
+        }
+
+        .reminder-item:last-child { margin-bottom: 0; }
+
+        .reminder-check {
+            width: 22px;
+            height: 22px;
+            border: 2px solid rgba(255,255,255,0.6);
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        /* Footer */
+        .page-footer {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 13px;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .page-footer strong { color: #6b7280; }
+
+        @media print {
+            body { background: white; }
+            .section-card { box-shadow: none; border: 1px solid #e5e5e5; }
+            .page-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-header">
+    <h1>TiE Women Program 2026</h1>
+    <div class="subtitle">Application Answers — Rebloom Collective</div>
+    <div class="meta">Prepared May 2026 &nbsp;·&nbsp; kevinaujo@gmail.com &nbsp;·&nbsp; +256 788 798353</div>
+</div>
+
+<div class="container">
+
+    <div class="alert">
+        <strong>Before submitting:</strong> Review every answer, fill in all <span style="border:1px dashed #d97706; padding:1px 6px; border-radius:4px;">placeholder fields</span>, confirm female-founder equity eligibility, ensure business registration is complete, and attach the pitch deck.
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section-card">
+        <div class="section-header">
+            <div class="section-number">1</div>
+            <h2>Basic Company Information</h2>
+        </div>
+        <div class="section-body">
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Company Name *</div>
+                <div class="answer"><p>Rebloom Collective</p></div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Your Name *</div>
+                <div class="answer"><p>Kevin Aujo</p></div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Email *</div>
+                <div class="answer"><p>kevinaujo@gmail.com</p></div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Your role or title in your company? *</div>
+                <div class="answer"><p>Founder &amp; Executive Director</p></div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> What is your stake in the company? *</div>
+                <div class="answer">
+                    <p><span class="pill">✓ Select: 33% and more</span></p>
+                    <div class="note">Female co-founder must hold a minimum of 33% equity to meet TiE Women eligibility. Verify founding team structure before submission.</div>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Mobile Number *</div>
+                <div class="answer"><p>+256 788 798353</p></div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> LinkedIn profile link *</div>
+                <div class="answer">
+                    <span class="placeholder">▸ Insert your LinkedIn profile URL here</span>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> What is your company's website? *</div>
+                <div class="answer">
+                    <p>https://rebloom-collective.vercel.app</p>
+                    <div class="note">Update to your custom domain once configured.</div>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Facebook Handle</div>
+                <div class="answer"><span class="placeholder">▸ e.g. @RebloomCollective</span></div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Twitter Handle</div>
+                <div class="answer"><span class="placeholder">▸ e.g. @RebloomCollect</span></div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Instagram Handle</div>
+                <div class="answer"><span class="placeholder">▸ e.g. @rebloomcollective</span></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section-card">
+        <div class="section-header">
+            <div class="section-number">2</div>
+            <h2>Company Registration Details</h2>
+        </div>
+        <div class="section-body">
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> In which city (and state, if applicable) is your company registered? *</div>
+                <div class="answer"><p>Pallisa District, Eastern Region</p></div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> In which country is your company registered? *</div>
+                <div class="answer"><p>Uganda</p></div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> What is the incorporation date of your company? *</div>
+                <div class="answer">
+                    <span class="placeholder">▸ Insert actual registration date (mm/dd/yyyy)</span>
+                    <div class="note">Must be after 01/01/2019 to meet the under-7-years eligibility requirement.</div>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Stage of Startup *</div>
+                <div class="answer"><p><span class="pill">✓ Select: Early Stage</span></p></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section-card">
+        <div class="section-header">
+            <div class="section-number">3</div>
+            <h2>Business Description</h2>
+        </div>
+        <div class="section-body">
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Tell us the broad industry sector in which you compete or will compete *</div>
+                <div class="answer">
+                    <p>Healthcare / Social Impact / Sustainable Consumer Products</p>
+                    <p>Rebloom Collective operates at the intersection of three sectors: <strong>(1) Healthcare</strong> — menstrual health and hygiene management (MHM); <strong>(2) Social Impact</strong> — trauma-informed support and economic empowerment for gender-based violence (GBV) survivors; and <strong>(3) Sustainable Consumer Products</strong> — eco-friendly reusable menstrual pad manufacturing.</p>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Please describe your product or service. What is your Unique Selling Proposition? *</div>
+                <div class="answer">
+                    <p>Rebloom Collective is Eastern Uganda's first integrated social enterprise simultaneously tackling gender-based violence, period poverty, and environmental degradation through a unique <strong>Three-Pillar Model</strong>:</p>
+
+                    <div class="answer-heading">Pillar 1 — GBV Rehabilitation Center</div>
+                    <p>Trauma-informed counseling and psychosocial support delivered in local languages (Ateso, Lugwere) by trained professionals, offering individual therapy, group peer support, crisis intervention, and community reintegration.</p>
+
+                    <div class="answer-heading">Pillar 2 — Rebloom Pads Production</div>
+                    <p>High-quality reusable menstrual pad kits (4 pads + waterproof pouch) manufactured by trained GBV survivors. Each kit costs ~$4 USD (UGX 15,000), lasts 2–3 years, and replaces 200+ disposable pads — 70% cheaper over its lifetime.</p>
+
+                    <div class="answer-heading">Pillar 3 — CHE (Community Health Entrepreneur) Network</div>
+                    <p>Last-mile distribution through trained women entrepreneurs who earn 20–25% commission and simultaneously deliver menstrual health education and GBV awareness to remote communities.</p>
+
+                    <div class="answer-heading">Unique Selling Proposition</div>
+                    <p>We are the <strong>only organisation</strong> that transforms GBV survivors from victims into entrepreneurs while solving period poverty and reducing environmental waste. Our survivor-led production model creates a powerful empowerment cycle: women heal → gain skills → earn income → become independent business owners. No competitor in the region combines all three outcomes in a single, self-sustaining enterprise.</p>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Tell us about the markets in which you are competing or will compete *</div>
+                <div class="answer">
+                    <div class="answer-heading">Primary Market: Pallisa District &amp; Bukedi Sub-region, Eastern Uganda</div>
+                    <ul>
+                        <li>65% of girls cannot afford menstrual products; 85% resort to unhygienic alternatives</li>
+                        <li>28% of girls miss school during menstruation; 23% drop out entirely after menstruation begins</li>
+                        <li>37.1% sexual violence rate — 123% above Uganda's national average</li>
+                        <li><strong>Zero reusable pad manufacturers within 300 km</strong> — a clear market gap</li>
+                        <li>35.7% poverty rate, highest in Uganda, creating demand for affordable sustainable alternatives</li>
+                    </ul>
+
+                    <div class="answer-heading">Target Customer Segments</div>
+                    <ul>
+                        <li><strong>Direct Retail:</strong> Adolescent girls and women in rural and peri-urban areas</li>
+                        <li><strong>Institutional Bulk:</strong> NGOs, schools, and health organisations implementing MHM programmes</li>
+                        <li><strong>CHE Network:</strong> Community-level sales reaching remote villages</li>
+                        <li><strong>Training Clients:</strong> Schools, CBOs, and partner organisations seeking MHM education</li>
+                    </ul>
+
+                    <div class="answer-heading">Year 1 Financial Projections</div>
+                    <ul>
+                        <li>Pad Retail: $5,100 (35%)</li>
+                        <li>Bulk NGO/School Orders: $4,600 (32%)</li>
+                        <li>CHE Network Sales: $2,600 (18%)</li>
+                        <li>Training &amp; Workshops: $2,160 (15%)</li>
+                        <li><strong>Total Year 1 Revenue: $14,460</strong></li>
+                    </ul>
+
+                    <div class="answer-heading">Expansion Markets (Year 2–3)</div>
+                    <p>Adjacent districts (Kumi, Soroti, Tororo, Mbale) and potential East African regional expansion through NGO partnerships.</p>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> What is your competitive advantage in these markets? *</div>
+                <div class="answer">
+                    <ul>
+                        <li><strong>First-Mover Advantage:</strong> Only reusable pad manufacturer within 300 km of Pallisa District. No local competitor exists.</li>
+                        <li><strong>Integrated Impact Model:</strong> Competitors address either GBV <em>or</em> period poverty <em>or</em> sustainability — we uniquely address all three simultaneously, creating compound social returns of $4–6 per $1 invested.</li>
+                        <li><strong>Local Expertise &amp; Trust:</strong> Founder is a native Ateso speaker, fluent in Lugwere and Luganda, with MPH credentials and direct GBV counseling experience at Pallisa Probation Office. This cultural credibility cannot be replicated by outside competitors.</li>
+                        <li><strong>Cost Leadership:</strong> At ~$4 per kit, our product is 70% cheaper than disposables over 2–3 years, making it accessible to the poorest households.</li>
+                        <li><strong>Established Distribution:</strong> Existing relationships with Community Health Workers through founder's role at Baylor-Uganda provide immediate last-mile channels.</li>
+                        <li><strong>Mission-Driven Workforce:</strong> Survivor-employees bring deep commitment to quality and low turnover, reducing operational risk.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Tell us about any intellectual property, key strategic relationships, first-mover advantage, or your other competitive advantages in your markets. *</div>
+                <div class="answer">
+                    <div class="answer-heading">First-Mover Advantage</div>
+                    <p>Sole reusable menstrual pad producer in Bukedi sub-region (population 1.2M+). Establishing brand recognition and customer loyalty before competitors can enter.</p>
+
+                    <div class="answer-heading">Key Strategic Relationships</div>
+                    <ul>
+                        <li><strong>Pallisa District Probation Office</strong> — GBV survivor referral pipeline into our rehabilitation programme</li>
+                        <li><strong>Baylor-Uganda</strong> — Access to established Community Health Worker networks for distribution</li>
+                        <li><strong>Local traditional leaders &amp; cultural institutions</strong> — Community acceptance and endorsement</li>
+                        <li><strong>District schools and health centres</strong> — Institutional bulk sales and MHM education delivery channels</li>
+                    </ul>
+
+                    <div class="answer-heading">Founder's Unique Positioning</div>
+                    <ul>
+                        <li>MPH (Uganda Martyrs University) + BSWASA (Kyambogo University)</li>
+                        <li>Trained Peer Educator on Adolescent Sexual and Reproductive Health (ASRH)</li>
+                        <li>Quality Improvement and Data Management expertise for rigorous impact measurement</li>
+                        <li>Native multilingual capability: Ateso, Lugwere, Luganda, English</li>
+                    </ul>
+
+                    <div class="answer-heading">Defensible Moat</div>
+                    <p>Deep community relationships built over years, a trauma-informed training curriculum tailored to local context, and traditional leader endorsements create barriers that outside entrants cannot easily replicate.</p>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Is your startup pre-revenue? *</div>
+                <div class="answer">
+                    <p><span class="pill">✓ Select: Yes</span></p>
+                    <p>We are at seed stage, actively preparing for launch. Detailed financial projections demonstrate $14,460 Year 1 revenue, break-even by Month 8, and a 33.3% net profit margin — supported by a $5,000 seed capital ask with 289% projected ROI.</p>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Please briefly describe your customer acquisition strategy? *</div>
+                <div class="answer">
+                    <p>Our go-to-market strategy combines four synergistic channels:</p>
+
+                    <div class="answer-heading">1. CHE Network (primary channel — 18% of Y1 revenue, growing to dominant channel)</div>
+                    <p>Train and deploy 25 Community Health Entrepreneurs in Year 1, scaling to 100 by Year 3. CHEs earn 20–25% commission, creating strong financial incentive to sell. Door-to-door reach penetrates villages inaccessible to traditional retail. CHEs also deliver free MHM education, building trust before pitching products.</p>
+
+                    <div class="answer-heading">2. Institutional / Bulk Sales (32% of Y1 revenue)</div>
+                    <p>Partner with NGOs implementing MHM programmes (UNFPA, WaterAid, local CBOs), district schools for student health initiatives, and health centres for patient distribution. Offer 25% bulk discount with co-branded education materials.</p>
+
+                    <div class="answer-heading">3. Direct Retail (35% of Y1 revenue)</div>
+                    <p>Sales from the production centre, market-day presence in trading centres, and referral-driven word-of-mouth from satisfied customers.</p>
+
+                    <div class="answer-heading">4. Training &amp; Workshops (15% of Y1 revenue)</div>
+                    <p>Fee-based MHM education sessions for schools and communities; pad-making skills workshops; capacity-building for partner organisations.</p>
+
+                    <div class="answer-heading">Retention Strategy</div>
+                    <p>The 2–3 year product lifespan creates a natural repurchase cycle. Ongoing CHE relationships maintain direct customer contact, and quality products build lasting brand loyalty.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section-card">
+        <div class="section-header">
+            <div class="section-number">4</div>
+            <h2>Team &amp; Funding</h2>
+        </div>
+        <div class="section-body">
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Describe the current senior management team and their tenure with your company. *</div>
+                <div class="answer">
+                    <div class="answer-heading">Kevin Aujo — Founder &amp; Executive Director (Since inception)</div>
+
+                    <p><strong>Education:</strong></p>
+                    <ul>
+                        <li>Master of Public Health (MPH) — Uganda Martyrs University</li>
+                        <li>Bachelor of Social Work and Social Administration (BSWASA) — Kyambogo University</li>
+                    </ul>
+
+                    <p><strong>Professional Experience:</strong></p>
+                    <ul>
+                        <li><strong>GBV Counselor, Pallisa District Probation Office</strong> — Provided trauma-informed support to GBV survivors; built district-wide referral relationships</li>
+                        <li><strong>Case Management Officer, Baylor-Uganda (Current)</strong> — Manages Community Health Worker networks; quality improvement and data management expertise</li>
+                        <li><strong>Trained Peer Educator — Adolescent Sexual &amp; Reproductive Health (ASRH)</strong> — Deep understanding of MHM challenges facing adolescent girls in the region</li>
+                    </ul>
+
+                    <p><strong>Key Differentiators:</strong></p>
+                    <ul>
+                        <li>Native Ateso speaker; fluent in Lugwere, Luganda, and English — essential for community trust</li>
+                        <li>Established relationships across district health, social services, and traditional leadership</li>
+                        <li>Data management and M&amp;E capabilities for rigorous impact measurement</li>
+                    </ul>
+
+                    <p><strong>Planned Advisory Board:</strong> Seeking advisors with expertise in textile/manufacturing, social enterprise scaling, impact investment, and women's health in East Africa.</p>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> How is your company funded? *</div>
+                <div class="answer">
+                    <p>Currently bootstrapped with founder's personal investment. Seeking <strong>$5,000 seed capital</strong> to launch operations.</p>
+
+                    <div class="answer-heading">Use of Seed Funds</div>
+                    <ul>
+                        <li><strong>$1,300 (26%)</strong> — Production Equipment: sewing machines, cutting tables, quality control tools</li>
+                        <li><strong>$1,100 (22%)</strong> — GBV Center Setup: counseling room furniture, privacy screens, basic supplies</li>
+                        <li><strong>$1,000 (20%)</strong> — CHE Network Launch: training materials and starter kits for 25 CHEs</li>
+                        <li><strong>$900 (18%)</strong> — Raw Materials: initial fabric, absorbent materials, packaging inventory</li>
+                        <li><strong>$700 (14%)</strong> — Operations Reserve: rent, utilities, and marketing for Months 1–3</li>
+                    </ul>
+
+                    <div class="answer-heading">Financial Projections</div>
+                    <ul>
+                        <li>Year 1 Revenue: <strong>$14,460</strong></li>
+                        <li>Year 1 Net Profit: <strong>$4,810 (33.3% margin)</strong></li>
+                        <li>Break-even: <strong>Month 8</strong></li>
+                        <li>3-Year Revenue: $14,460 → $28,000 → $45,000</li>
+                        <li>ROI on $5,000 seed: <strong>289%</strong></li>
+                        <li>Social Return on Investment: <strong>$4–6 per $1 invested</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Are you looking to raise (more) funding? *</div>
+                <div class="answer">
+                    <p><span class="pill">✓ Select: Yes</span></p>
+                    <p>We are actively seeking $5,000 in seed capital to launch operations. The TiE Women $50,000 prize would be transformative — enabling us to serve <strong>200+ survivors</strong> and reach <strong>3,000+ girls</strong> in Year 1 instead of our baseline projections, and accelerating our CHE network to 60 entrepreneurs by end of Year 1.</p>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Pitch Deck *</div>
+                <div class="answer">
+                    <span class="placeholder">▸ Upload: Rebloom_Collective_Pitch_Deck.pdf (available in repository root folder)</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="section-card">
+        <div class="section-header">
+            <div class="section-number">5</div>
+            <h2>TiE Programme Information</h2>
+        </div>
+        <div class="section-body">
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Are you currently a TiE Member? *</div>
+                <div class="answer">
+                    <p><span class="pill">✓ Select: No</span></p>
+                    <div class="note">If you become a TiE member before the June 15 deadline, update this answer to "Yes".</div>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Please select the closest TiE chapter from the list below *</div>
+                <div class="answer">
+                    <span class="placeholder">▸ Select the nearest available chapter (check for TiE Uganda or TiE Nairobi as closest regional options)</span>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> How did you hear about the 2026 TiE Women Global Pitch Competition? *</div>
+                <div class="answer">
+                    <p>Social Media &nbsp;·&nbsp; Professional colleague</p>
+                    <div class="note">Select all that apply. If "Other" is most accurate, specify: "Online research for women entrepreneur funding opportunities in East Africa."</div>
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question"><span class="question-label">Q</span> Have you applied to TiE Women Global Pitch Competition previously? If yes, please mention the year of application. *</div>
+                <div class="answer">
+                    <p>No — this is our first application to the TiE Women Global Pitch Competition.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Reminders -->
+    <div class="reminders-card">
+        <h2>✅ Pre-Submission Checklist</h2>
+        <div class="reminder-item">
+            <div class="reminder-check"></div>
+            <span>Verify female founder/co-founder holds minimum 33% equity (mandatory eligibility requirement)</span>
+        </div>
+        <div class="reminder-item">
+            <div class="reminder-check"></div>
+            <span>Confirm business is formally registered with an incorporation date after January 1, 2019</span>
+        </div>
+        <div class="reminder-item">
+            <div class="reminder-check"></div>
+            <span>Fill in all placeholder fields (LinkedIn URL, social media handles, incorporation date)</span>
+        </div>
+        <div class="reminder-item">
+            <div class="reminder-check"></div>
+            <span>Upload pitch deck: <em>Rebloom_Collective_Pitch_Deck.pdf</em></span>
+        </div>
+        <div class="reminder-item">
+            <div class="reminder-check"></div>
+            <span>Select the correct TiE chapter from the dropdown</span>
+        </div>
+        <div class="reminder-item">
+            <div class="reminder-check"></div>
+            <span>Review all answers for consistency and typos before clicking Submit</span>
+        </div>
+        <div class="reminder-item">
+            <div class="reminder-check"></div>
+            <span>Save a copy of all submitted answers for your records</span>
+        </div>
+        <div class="reminder-item">
+            <div class="reminder-check"></div>
+            <span>Submit before <strong>June 15, 2026</strong></span>
+        </div>
+    </div>
+
+    <div class="page-footer">
+        <p>Prepared for <strong>Rebloom Collective</strong> Leadership Team &nbsp;·&nbsp; May 2026</p>
+        <p style="margin-top:6px;">Sources: TiE Women Official Website (tiewomen.org) &nbsp;·&nbsp; Opportunity Desk &nbsp;·&nbsp; TiE Pune &nbsp;·&nbsp; Indian Link</p>
+    </div>
+
+</div>
+</body>
+</html>
